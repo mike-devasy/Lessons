@@ -36,3 +36,5 @@ let p = 23000
 newBalance.addMoney(p)
 let s = newBalance.Balance
 console.log(`Ваш рахунок поповнено на ${p} грн.,та зараз на вашому рахунку ${s}грн.`);
+let dollarRateMore100 = newBalance.getTarget100Rate()
+console.log(`Курс долара,при якому гривневий рахунок збільшиться на 100грн : ${dollarRateMore100}`);
