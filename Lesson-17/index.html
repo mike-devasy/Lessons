@@ -1,0 +1,128 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork №17</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ДЗ №17   Класи. Статичні поля і методи. Композиція, агрегація </h1>
+      <ul>
+       
+        <a target="_blank" href="tasks/task1.html"
+          ><li>
+            <h3>Задача 1</h3>
+            <p>
+						Створити клас, що дозволяє виконувати такі операції над масивами: знаходження кількості додатних,<br>
+						 кількості від’ємних, кількість входжень деякого числа (статичні методи)
+            </p>
+					 
+          </li>
+        </a>
+        <a target="_blank" href="tasks/task2.html"
+          ><li>
+            <h3>Задача 2</h3>
+            <p>
+						Створити службове авто (водій, марка, номер). Створити клас таким чином, щоб можна було створити<br> 
+						тільки один екземпляр цього класу.
+
+            </p>
+					 
+          </li>
+        </a>
+        <a target="_blank" href="tasks/task3.html"
+          ><li>
+            <h3>Задача 3</h3>
+            <p>
+						Створити клас Нагадувач. Кожні вказані кількості секунд (використати setInterval) програма<br>
+						 нагадує про якусь подію (це просто текст) і також виводиться порядковий номер скільки раз <br>
+						 вже нагадування було. Зробити так, щоб неможна було зробити одночасно декілька об’єктів-нагадувачів. <br>
+						 Методи зупинки таймера, метод зміни повідомлення без зупинки таймера.
+
+            </p>
+						 
+          </li>
+        </a>
+        <a target="_blank" href="tasks/task5.html"
+          ><li>
+            <h3>Задача 4</h3>
+            <p>
+					Особиста бібліотека. Картотека домашньої бібліотеки: дані книги (автори (піб, рік народження, короткий опис),<br>
+					 назва книги, жанр, видавництво (назва, реєстраційний номер, рік засування)).<br> 
+					Реалізувати розділи бібліотеки організувати додавання/вилучення книг та  вибір книг за назвою,<br> 
+					за ПІБ автора, за видавництвом.
+
+            </p>
+				 
+          </li>
+        </a>
+        <a target="_blank" href="tasks/task6.html"
+          ><li>
+            <h3>Задача 5</h3>
+            <p>
+							Дано два класи MultChecker (клас для перевірки таблиці множення - рандомно генеруються числа, <br>
+							які треба перемножати), AddChecker (клас для перевірки додавання - рандомно генеруються числа  <br>
+							у заданому діапазоні, які треба додавати). Обидва класи надсилають результати тестування об'єкту класу  <br>
+							Hystory, який зберігає історію тестування у масиві у вигляді об'єктів  
+Приклад.
+testsList= [
+   {firstNum:1, secondNum:5,opration:’*’, userAnswer:7, correctAnswer:5},
+   {firstNum:3, secondNum:4,opration:’+’, userAnswer:7, correctAnswer:7},
+]
+Можна створити окремий клас TestData, який описує один такий тест і у якому будуть ці поля.  <br>
+Розробити клас TestManager, який використовуючи ці класи за допомогою таймера періодично генерує  <br>
+якісь N задач (рандомно вибираємо, що опитувати: додавання чи множення) і проводить опитування.  <br>
+Результати тестування додаються в об’єкт History.  Зробити так, щоб об'єкт такого класу можна було <br> 
+створити тільки один. Коли зроблено ці N задач вивести усю історію на екран.
+            </p>
+					 
+          </li>
+        </a>
+      </ul>
+    </div>
+  </body>
+	<style>
+			@charset "UTF-8";
+			@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+			body{
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 18px;
+			background-color:  rgba(68, 85, 102, 0.237);
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			}
+			a {
+			text-decoration: underline;
+		}
+		a:visited {
+			text-decoration: underline;
+		}
+			a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+ 
+		h1{
+			font-style: oblique;
+			text-align: center;
+			text-transform: capitalize;
+			color:rgba(78, 78, 178, 0.897)
+		}
+		h3{
+			color:rgb(212, 127, 255);
+			font-size: 30px;
+		}
+	</style>
+</html>
