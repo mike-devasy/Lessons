@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task6</title>
+	<style>
+	 
+ #base{
+display: flex;
+gap: 50px;
+ }
+		.sportsman__button{
+			font-size: 20px;
+			/* display: block; */
+			width: 100px;
+			height: 40px;
+			background-color: rgb(85, 218, 32);
+			color:rgb(81, 91, 124);
+			border-radius:  5px ;
+		}
+		.sportsman{
+			max-width: 400px;
+			height: 50px;
+			display: flex;
+			padding: 15px;
+			justify-content: space-between;
+			align-items: center;
+			border:3px solid rgba(77, 77, 166, 0.683);
+			border-radius:10px;
+			margin-bottom: 20px;
+		}
+		.sportsman__name{
+			font-size: 25px;
+		}
+		ul{
+	background-color:rgba(0, 255, 170, 0.505);
+	margin-top: 80px;
+	padding: 20px;
+	width: 500px;
+	border-radius:20px;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Дано список спортсменів. Потрібно сформувати список тих, які будуть брати участь у змаганні. <br>
+		При цьому є два стовпці. В одному відображені всі спортсмени, в іншому – список тих, хто був <br>
+		вибраний. При натисканні на зелену стрілку спортсмен переміщається у список для змагань. При <br>
+		натисканні на червону стрілку спортсмен переміщається у загальний список.
+	</p>
+	<div>
+		<img src="../img/06.jpeg" alt="">
+	</div>
+ <div id ="base">
+	<ul class="sportsman__list">
+	<h2>Загальний список спортсменів</h2>
+
+		<li class="sportsman">
+			<p class="sportsman__name">Анна Краса</p>
+			<button  class="sportsman__button"  type = 'button'>Вибрати</button>
+		</li>
+		<li class="sportsman">
+			<p class="sportsman__name">Юрій Сила</p>
+			<button  class="sportsman__button"  type = 'button'>Вибрати</button>
+		</li>
+		<li class="sportsman">
+			<p class="sportsman__name">Евгенія Любов</p>
+			<button  class="sportsman__button"  type = 'button'>Вибрати</button>
+		</li>
+		<li class="sportsman">
+			<p class="sportsman__name">Дана Милість</p>
+			<button  class="sportsman__button"  type = 'button'>Вибрати</button>
+		</li>
+ 
+	</ul>
+<ul class="sportsman__select_list">
+	<h2>Список обраних  спортсменів</h2>
+
+</ul>
+ </div>
+	<script src="../js/script6.js"></script>
+</body>
+</html>
