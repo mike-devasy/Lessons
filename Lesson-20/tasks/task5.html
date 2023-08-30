@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task5</title>
+	<style>
+    .translator {
+        display: flex;
+      }
+      .words-list {
+        border: 2px solid black;
+        margin: 20px;
+        width: 200px;
+      }
+      .item {
+        border: 2px solid black;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .selected {
+        border: 2px solid blue !important;
+      }
+      .wrong {
+        border: 2px solid red !important;
+      }
+	</style>
+</head>
+<body>
+	<p>
+		Задача5. Перекладач. Користувачу виводять змішані картки з словами на англійській і <br>
+		українській мові. Користувач поступово клікає на картки (виділяємо синьою рамкою). <br>
+		Якщо знайдено правильні пари карток, що відповідають одному слову, то видаляємо ці картки. <br>
+		Інакше - виділяємо червоною рамкою і через секунду забираємо рамку.
+	</p>
+	<div>
+		<img src="../img/05.jpeg" alt="">
+	</div>
+	<div id="container"></div>
+	<div>
+		<div lang="en">
+			<div word-id="3">man</div>
+			<div word-id="2">bus</div>
+		</div>
+		<div lang="ua">
+			<div word-id="2">автобус</div>
+			<div word-id="3">людина</div>
+		</div>
+	</div>
+	<script src="../js/script5.js"></script>
+</body>
+</html>
