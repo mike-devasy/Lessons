@@ -111,8 +111,8 @@ switch (formUserDay) {
 	break;
 }
 }
- else  if(formUserDay >= 0 && formUserDay <= 4) console.log('Це робочий день')
-else if(formUserDay >= 5 && formUserDay <= 6)console.log('Це вихідний день')
+ else  if(/[0-4]/.test(formUserDay)) console.log('Це робочий день')
+else if(/[5-6]/.test(formUserDay))console.log('Це вихідний день')
 else console.log('Error');  
 
 
